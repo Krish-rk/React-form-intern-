@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   bcrypt: 5.0.1
+  dotenv: ^16.4.5
   express: ^4.17.1
   jsonwebtoken: ^8.5.1
   sqlite: ^4.0.19
@@ -10,6 +11,7 @@ specifiers:
 
 dependencies:
   bcrypt: 5.0.1
+  dotenv: 16.4.5
   express: 4.19.2
   jsonwebtoken: 8.5.1
   sqlite: 4.2.1
@@ -351,6 +353,11 @@ packages:
   /detect-libc/2.0.3:
     resolution: {integrity: sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw==}
     engines: {node: '>=8'}
+    dev: false
+
+  /dotenv/16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
     dev: false
 
   /ecdsa-sig-formatter/1.0.11:

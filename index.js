@@ -7,6 +7,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const bodyParser = require("body-parser");
 const { z } = require("zod");
+require("dotenv").config(); // Load environment variables from .env file
 
 const app = express();
 const dbPath = path.join(__dirname, "fnMoney.db");
@@ -130,6 +131,7 @@ app.post("/assessments", authenticateJWT, async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log("Server Running at http://localhost:3000/");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server Running at http://localhost:${PORT}/`);
 });
