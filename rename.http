@@ -1,0 +1,31 @@
+
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{    
+    "username": "rahul123",
+    "password": "rahul@456"
+}
+
+###
+
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{    
+    "username": "rahul123",
+    "password": "rahul@456"
+} 
+
+###
+POST http://localhost:3000/assessments/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJyYWh1bDEyMyIsImlhdCI6MTcyMTY3NDY5OSwiZXhwIjoxNzIxNjc4Mjk5fQ.LmgD9xnaIi1TICZ1h2dJE4WVPHcnDnsLQ5rkkkBNcOI
+
+{
+  "title": "Assessment Title",
+  "description": "This is a description of the assessment."
+}
